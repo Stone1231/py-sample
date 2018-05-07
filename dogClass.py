@@ -16,3 +16,7 @@ class Persion():
     def __init__(self, name):
         self.name =name
   
+class Master():
+    def __init__(self, name):
+        self.name =name
+        self.dogs = [Dog('', 0, 0)]

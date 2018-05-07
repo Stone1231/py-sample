@@ -34,3 +34,18 @@ sortDescLists = sorted(
 
 for dog in sortDescLists: 
     print(dog.name)  
+
+import os
+import json
+def test_json():
+    master = Master('')
+    try:
+        path = os.path.dirname(os.path.abspath(__file__))
+        with open(os.path.join(path,'dog.json') ) as dump_f:        
+            data = json.load(dump_f)            
+            master.__dict__ = data
+            print(master)
+    except Exception as e:
+        print(e)    
+
+test_json()        

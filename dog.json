@@ -1,0 +1,15 @@
+{
+    "name": "stone",
+    "dogs": [
+        {
+            "name": "aa",
+            "heigh": 20,
+            "weight": 25
+        },
+        {
+            "name": "bb",
+            "heigh": 22,
+            "weight": 23
+        }
+    ]
+}
