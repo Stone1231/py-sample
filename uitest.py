@@ -1,6 +1,6 @@
 import unittest
-from functions import get_full_name
-from dogClass import Dog
+from functionEx import get_full_name
+from ClassEx import Dog
 
 class NamesTest(unittest.TestCase): 
 

@@ -1,4 +1,4 @@
-from dogClass import Dog
+from ClassEx import Dog
 
 class SARDog(Dog): 
     """Represent a search dog.""" 
