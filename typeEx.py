@@ -97,8 +97,13 @@ list(hello) # ['h', 'e', 'l', 'l', 'o']
 set(hello) # {'o', 'e', 'l', 'h'}
 tuple(hello) # ('h', 'e', 'l', 'l', 'o')
 
-s = """w'o"w"""
-repr(s) # Output: '\'w\\\'o"w\''
-str(s) # Output: 'w\'o"w'
-eval(str(s)) == s # Gives a SyntaxError
-eval(repr(s)) == s # Output: True
+from enum import Enum
+class Color(Enum):
+    red = 1
+    green = 2
+    blue = 3
+print(Color.red) # Color.red
+print(Color(1)) # Color.red
+print(Color['red']) # Color.red
+print(Color.red.value) # 1
+print([c for c in Color]) # [<Color.red: 1>, <Color.green: 2>, <Color.blue: 3>]

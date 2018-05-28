@@ -55,3 +55,19 @@ def sort_desc_ex():
     for number in sortDescNumbers: 
         print(number)
 sort_desc_ex() 
+
+def dict_init():
+    print("====dict_init====")
+    dict_info = dict(code=0, message="hello")
+    print(dict_info)
+dict_init()    
+
+def merging():
+    print("====merging====")
+    fish = {'name': "Nemo", 'hands': "fins", 'special': "gills"}
+    dog = {'name': "Clifford", 'hands': "paws", 'color': "red"}
+    fishdog = {**fish, **dog}
+    print(fishdog) 
+    #duplicate keys map to their lattermost value
+    #更新最新值
+merging()    
