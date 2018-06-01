@@ -9,6 +9,7 @@ class SARDog(Dog):
     def search(self): 
         """Simulate searching.""" 
         print(self.name + " is searching.") 
+              
 
 my_sardog = SARDog('Willie',220 ,10) 
 print(my_sardog.name + " is a search dog.") 

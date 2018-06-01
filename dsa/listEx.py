@@ -104,3 +104,6 @@ def check_item_ex():
     print('surly' not in bikes)
     print(bikes[0] == 'trek')
 check_item_ex()
+
+add_list = [1] + [2,3]
+print(add_list) #[1, 2, 3]

@@ -24,5 +24,18 @@ def ex2():
             msg = "{0} has {1} lines.".format( f_name, num_lines) 
             print(msg)
 
-ex2()
-#ex1()        
+
+def throw(x):
+    if x in (3,4,5):
+        return x**2
+    raise Exception("You should provide a valid exponent")
+
+
+#ex1()  
+#ex2()      
+
+print(throw(3)) #scuuess
+try:
+    print(throw(6)) #raise Exception
+except Exception as identifier:
+    print(identifier)

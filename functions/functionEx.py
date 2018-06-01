@@ -48,4 +48,3 @@ user_2 = build_profile('stone', 'rock', location='paris', field='chemistry', bb=
 print(user_0) 
 print(user_1) 
 print(user_2) 
-
