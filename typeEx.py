@@ -1,3 +1,16 @@
+print( type(1)             ) # <class 'int'>
+print( type(1.1)           ) # <class 'float'>
+print( type("hello")       ) # <class 'str'>
+print( type([1,2,3])       ) # <class 'list'>
+print( type({1,2,3})       ) # <class 'set'>
+print( type({1: 10, 2:20}) ) # <class 'dict'>
+
+def func():
+    return "hello"
+print(type( func   ))  # <class 'function'>
+print(type( func() ))  # <class 'str'>  因為 func() 回傳的是 "hello" 這個 string
+
+
 issubclass(bool, int) # True
 isinstance(True, bool) # True
 isinstance(False, bool) # True

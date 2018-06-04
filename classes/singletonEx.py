@@ -1,3 +1,4 @@
+# ex1:
 class Singleton:
     """
     A non-thread-safe helper class to ease implementing singletons.
@@ -41,3 +42,32 @@ y=Single.Instance()
 x.name='I\'m single'
 x.getName() # outputs I'm single
 y.getName() # outputs I'm single
+
+# ex2 透過 __new__
+class Single2(object):
+    __instance = None
+    def __new__(cls, *args, **kwargs):
+        if not cls.__instance:
+            cls.__instance = super().__new__(cls, *args, **kwargs)
+        return cls.__instance
+ 
+    def __init__(self):
+        print(id(self))  # 印出來的 instance id 都是相同的        
+a = Single2() # 
+b = Single2() # 
+c = Single2() # 
+
+# ex2 透過 __new__ 
+class SingletonMeta(type):
+    __instance = None
+    def __call__(cls, *args, **kwargs):
+        if cls.__instance is None: # 記得要透過 cls 來存取__instance 這個 class attribute 喔
+            #cls.__instance = super().__new__(cls, *args, **kwargs)  # 即使用了 super()還是得加 cls?!
+            cls.__instance = super().__call__(*args, **kwargs)  # 用了 super() 就別加 cls
+        return cls.__instance
+
+# ex3 metaclass
+class Hello(metaclass=SingletonMeta): pass
+
+print(id(Hello()))
+print(id(Hello()))
