@@ -10,7 +10,9 @@ class Dog():
     def sit(self): 
         """Simulate sitting.""" 
         print(self.persion.name + "'s " + self.name + " is sitting.") 
-
+    def eat(self): 
+        """Simulate sitting.""" 
+        print(self.persion.name + "'s " + self.name + " is eating.") 
 
 class Persion():
     def __init__(self, name):

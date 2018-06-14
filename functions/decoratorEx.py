@@ -9,7 +9,7 @@ def super_secret_function(f):
 def my_function():
     print("This is my secret function.")
 
-my_function()    
+my_function()   
 
 #ex2 disabled
 def disabled(f):
@@ -55,7 +55,7 @@ class Decorator(object):
         print('Before the function call.')
         res = self.func(*args, **kwargs)
         print('After the function call.')
-        return res
+        return res      
 
 @Decorator
 def testfunc():

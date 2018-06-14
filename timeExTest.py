@@ -1,7 +1,7 @@
 from timeEx import DateOperator
-from datetime import datetime as dt
+from datetime import datetime, timedelta
 
-now_time = dt.now() 
+now_time = datetime.now() 
 
 last_month_day = DateOperator.last_month_day(now_time)
 last_week_day = DateOperator.last_week_day(now_time)
@@ -27,3 +27,9 @@ print(convert_timezone)
 print(strformat)
 print(isoformat)
 print(current_timezone)
+
+once_upon_a_time = datetime(2010, 7, 1, 12, 0, 0)
+delta = timedelta(days=13, hours=8, minutes=20)
+gen = (once_upon_a_time + x * delta for x in range(5))
+print(type(gen)) # generator
+print('\n'.join(map('{:%Y-%m-%d %H:%M:%S}'.format, gen)))
