@@ -2,8 +2,11 @@
 def describe_pet(name, animal='dog'): 
     """Display information about a pet.""" 
     print("\nI have a " + animal + ".") 
-    print("Its name is " + name + ".") 
+    #print("Its name is " + name + ".") 
+    print("Its name is {}.".format(name))
 
+describe_pet(1)
+describe_pet(1.1)
 describe_pet('harry', 'hamster') 
 describe_pet('willie')
 
