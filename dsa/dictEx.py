@@ -5,6 +5,7 @@ alien = {'color': 'green', 'points': 5}
 alien = {} #an empty dictionary
 alien['color'] = 'red' 
 alien['points'] = 6
+print(alien.get("name","stone")) #def
 
 #Accessing a value 
 def accessing_ex():
