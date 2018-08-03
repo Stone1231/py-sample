@@ -33,3 +33,9 @@ delta = timedelta(days=13, hours=8, minutes=20)
 gen = (once_upon_a_time + x * delta for x in range(5))
 print(type(gen)) # generator
 print('\n'.join(map('{:%Y-%m-%d %H:%M:%S}'.format, gen)))
+
+# 時間差
+delta_min = timedelta(minutes=10)
+some_time = now_time + timedelta(minutes=11)
+is_delta = (some_time - now_time) > delta_min
+print(is_delta)
