@@ -2,7 +2,7 @@ import math
 import cmath
 
 print(3 / 2) # = 1.5
-print(3 // 2) # = 1
+print(7 // 2) # = 3
 print(3 / 2.0) # = 1.5
 print(3 // 2.0) # = 1.0
 print(-3 / 2) # = -1.5
