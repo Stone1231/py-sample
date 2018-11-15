@@ -1,6 +1,6 @@
 import unittest
-from functionEx import get_full_name
-from ClassEx import Dog
+from functions.functionEx import get_full_name
+from classes.ClassEx import Dog
 
 class NamesTest(unittest.TestCase): 
 
@@ -22,5 +22,5 @@ class NamesTest(unittest.TestCase):
         dogName = 'ccc'
         self.assertEqual(dogName, self.dog.name)
 
-unittest.main()
+#unittest.main()
 
