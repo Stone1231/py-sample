@@ -11,6 +11,10 @@ my_dog.sit()
 
 #Importing an entire module
 import ClassEx
+
+my_persion = ClassEx.Persion()
+print("user's default name is " + my_persion.name) 
+
 my_persion = ClassEx.Persion('tom')
 print("user's name is " + my_persion.name) 
 

@@ -15,7 +15,7 @@ class Dog():
         print(self.persion.name + "'s " + self.name + " is eating.") 
 
 class Persion():
-    def __init__(self, name):
+    def __init__(self, name="happy"):
         self.name =name
   
 class Master():
