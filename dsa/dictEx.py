@@ -1,6 +1,9 @@
 #A simple dictionary 
 alien = {'color': 'green', 'points': 5} 
 
+#check contain key
+print("has k: {}".format("title" in alien))
+
 #同上
 alien = {} #an empty dictionary
 alien['color'] = 'red' 
