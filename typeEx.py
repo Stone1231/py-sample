@@ -120,3 +120,11 @@ print(Color(1)) # Color.red
 print(Color['red']) # Color.red
 print(Color.red.value) # 1
 print([c for c in Color]) # [<Color.red: 1>, <Color.green: 2>, <Color.blue: 3>]
+
+print(10 + 20.0) # 自動型別轉換
+
+try:
+    print("10" + 20)  # 自動型別轉換失敗
+except Exception as identifier:
+    print("{}".format(identifier))
+    # must be str, not int
