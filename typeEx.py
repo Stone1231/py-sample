@@ -128,3 +128,8 @@ try:
 except Exception as identifier:
     print("{}".format(identifier))
     # must be str, not int
+
+# weak typing
+wt = "hi"
+wt = 1
+print(wt) 
