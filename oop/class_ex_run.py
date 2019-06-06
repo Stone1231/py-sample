@@ -1,5 +1,5 @@
 #Importing individual classes from a module
-from ClassEx import Dog
+from class_ex import Dog
 
 my_dog = Dog('Peso',120 ,50) 
 print(my_dog.name + " is a great dog!") 
@@ -10,16 +10,16 @@ my_dog2.name = 'ddd'
 my_dog.sit()
 
 #Importing an entire module
-import ClassEx
+import class_ex
 
-my_persion = ClassEx.Persion()
+my_persion = class_ex.Persion()
 print("user's default name is " + my_persion.name) 
 
-my_persion = ClassEx.Persion('tom')
+my_persion = class_ex.Persion('tom')
 print("user's name is " + my_persion.name) 
 
 #Importing all classes from a module
-from ClassEx import *
+from class_ex import *
 
 dogs = [
     Dog('dogA',140, 60), 

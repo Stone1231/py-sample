@@ -1,4 +1,4 @@
-from timeEx import DateOperator
+from time_ex import DateOperator
 from datetime import datetime, timedelta
 
 now_time = datetime.now() 

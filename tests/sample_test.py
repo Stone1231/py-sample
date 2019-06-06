@@ -4,7 +4,7 @@ import unittest
 
 
 #@skip
-class Test_Ex(unittest.TestCase):
+class SampleTestCase(unittest.TestCase):
     def test_ok(self):
         print("會經過這")
         self.assertEqual(4, 4)

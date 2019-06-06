@@ -1,4 +1,4 @@
-from emails import EmailSender
+from mail import EmailSender
 
 server = "server"
 sender = "sender@mail.com"

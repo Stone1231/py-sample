@@ -58,3 +58,31 @@ print(a) # a = 0b001
 a = 0b101
 a ^= 0b011
 print(a) # a = 0b110
+
+
+#Bitwise NOT
+# 0 = 0b0000 0000
+print(~-1000)
+# Out: -1
+# -1 = 0b1111 1111
+
+# 0 ^ 0 = 0
+# 0 ^ 1 = 1
+# 1 ^ 0 = 1
+# 1 ^ 1 = 0
+
+#Bitwise XOR (Exclusive OR)
+60 ^ 30
+# 60 = 0b111100
+# 30 = 0b011110
+# Out: 34
+# 34 = 0b100010
+bin(60 ^ 30)
+# Out: 0b100010
+
+print(bin(~1))
+
+b = bin(60)
+print(b)
+print(~b) # TypeError: bad operand type for unary ~: 'str'
+print(bin(~60))

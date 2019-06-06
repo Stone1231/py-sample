@@ -6,7 +6,7 @@ class Node:
       self.prev = None
 
 # Create the doubly linked list class
-class doubly_linked_list:
+class DoublyLinkedList:
 
    def __init__(self):
       self.head = None
@@ -43,7 +43,7 @@ class doubly_linked_list:
            last = node
            node = node.next
         
-dllist = doubly_linked_list()
+dllist = DoublyLinkedList()
 dllist.push(12)
 dllist.append(9)
 dllist.push(8)
