@@ -9,3 +9,11 @@ def fun():
 # def fun():
 #     module1_fun()
 #     print('package1 - module2')  
+
+
+# 可直接執行, 但ide參考不到
+# from module1 import fun as module1_fun 
+# def fun():
+#     module1_fun()
+#     print('package1 - module2')  
+# fun()
